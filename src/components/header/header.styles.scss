@@ -20,6 +20,11 @@
   
       .option {
         padding: 10px 15px;
+        cursor: pointer;
       }
+      .option:hover{
+        border-bottom: 3px solid #09c ;
+       
+}
     }
   }
