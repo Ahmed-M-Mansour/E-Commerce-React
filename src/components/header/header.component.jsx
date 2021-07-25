@@ -20,7 +20,7 @@ import { auth } from './../../firebase/firebase.utils';
                 {
                     currentUser ?
                         <div
-                            className='option' onClick={() => auth().signOut()}
+                            className='option' onClick={() => auth.signOut()}
                         >
                             SIGNOUT 
                         </div>
@@ -28,7 +28,7 @@ import { auth } from './../../firebase/firebase.utils';
                         <Link className='option' to='/signin'>
                         SIGNIN  
                         </Link>
-
+                    
                 }
             </div>
         </div>
