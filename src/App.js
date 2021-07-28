@@ -54,7 +54,8 @@ class App extends React.Component {
               :
               (<SignInPage />)
              
-        } />
+          } />
+        
       </Switch>
     </div>
   );
