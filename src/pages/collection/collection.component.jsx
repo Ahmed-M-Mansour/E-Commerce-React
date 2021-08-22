@@ -10,12 +10,12 @@ import './collection.styles.scss';
 
 
 
-const CollectionPage = ({ collections     }) => {
-  console.log( "Type of collection is : " + collections) ; 
-  const {title , items } = collections ; 
+const CollectionPage = ({ collection    }) => {
+  console.log( "Type of collection is : " + collection) ; 
+  const {title , items } = collection ; 
   return (
     <div className='collection-page'>
-      <h2 className='title'> page  {title}  </h2>
+      <h2 className='title'>   {title}  </h2>
       <div className='items'>
    {
      items.map(item => 
@@ -29,7 +29,7 @@ const CollectionPage = ({ collections     }) => {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  collections: selectCollection(ownProps.match.params.collectionId)(state)
+  collection: selectCollection(ownProps.match.params.collectionId)(state)
 });
 
 export default connect(mapStateToProps)(CollectionPage);
